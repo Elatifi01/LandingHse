@@ -417,24 +417,28 @@ header.nav.scrolled .nav-in{box-shadow:0 12px 28px -18px rgba(20,22,15,.5)}
   gap:18px;margin-top:34px;
 }
 .logo-card{
-  width:190px;height:92px;display:flex;align-items:center;justify-content:center;
-  padding:16px 20px;background:#fff;border:1px solid var(--line);
-  border-radius:14px;box-shadow:0 18px 36px -30px rgba(20,22,15,.45);
+  width:210px;height:104px;display:flex;align-items:center;justify-content:center;
+  padding:12px 16px;background:transparent;border:1px solid transparent;
+  border-radius:8px;box-shadow:none;
   overflow:hidden;
-  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+  transition:transform .18s ease,border-color .18s ease;
 }
 .logo-card:hover{
-  transform:translateY(-2px);border-color:var(--line-strong);
-  box-shadow:0 24px 42px -30px rgba(20,22,15,.5);
+  transform:translateY(-2px);border-color:transparent;
 }
 .logo-card img{
   display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;
+  filter:grayscale(1) saturate(0) contrast(1.12);
+  transition:filter .2s ease,opacity .2s ease;
+}
+.logo-card:hover img{
+  filter:none;
 }
 .logo-card.colorado img{
-  max-width:78%;max-height:78%;transform:translateY(3px);
+  max-width:88%;max-height:88%;transform:translateY(3px);
 }
 .logo-card.total img{
-  max-width:82%;max-height:82%;transform:translateY(5px);
+  max-width:92%;max-height:92%;transform:translateY(5px);
 }
 
 /* ---------- section base ---------- */

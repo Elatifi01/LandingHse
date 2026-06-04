@@ -306,10 +306,10 @@ const TRUSTED_LOGOS = [
   },
   {
     name: "Lesieur Cristal",
-    src: "/assets/logos/lesieur.jpg",
+    src: "/assets/logos/lesieur.png",
     className: "lesieur",
   },
-  { name: "Cosumar", src: "/assets/logos/cosumar.jpg", className: "cosumar" },
+  { name: "Cosumar", src: "/assets/logos/cosumar.png", className: "cosumar" },
   {
     name: "TotalEnergies",
     src: "/assets/logos/total-energies.png",
