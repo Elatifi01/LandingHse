@@ -392,7 +392,6 @@ function FloatCard() {
 function Hero() {
   return (
     <section className="hero">
-      <div className="bgcircle"></div>
       <div className="wrap hero-in">
         <span className="eyebrow">Hygiène · Sécurité · Environnement</span>
         <h1 className="display">
@@ -409,11 +408,11 @@ function Hero() {
         </a>
         <FloatCard />
       </div>
-      <div
-        className="hero-bg"
-        role="img"
-        aria-label="Illustration - chantier de construction industrielle"
-      ></div>
+      <div className="hero-bg" aria-hidden="true">
+        <video autoPlay loop muted playsInline>
+          <source src="/assets/Video/hse_video.webm" type="video/webm" />
+        </video>
+      </div>
     </section>
   );
 }
